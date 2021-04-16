@@ -1,11 +1,11 @@
-from functions_ai import *
+from functions import *
 k=1
 while(k):
     fl=0
     count =0
     j=0
     print('PLAYER 1 HAS X AND COMPUTER HAS O')
-    print ('AND THE GAME BEGINS!!!!')
+    print 'AND THE GAME BEGINS!!!!'
     a=['1','2','3']
     b=['4','5','6']
     c=['7','8','9']
@@ -44,14 +44,13 @@ while(k):
             break
         if(count==9):
             break
-        print ('\n',a,'\n',b,'\n',c)
+        print '\n',a,'\n',b,'\n',c
         if (check_col(a,b,c)==0 or check_row(a,b,c)==0 or check_diag(a,b,c)==0):
             fl=1
             break
     if(fl==0):
-        print('\nThe game ends in Tie')
+        print'\nThe game ends in Tie'
     print'-----------------------------------------------------------'
     k=input('\nPress 1 if you want to play again press 1 else press 0: ')
-print('THE GAME IS OVER ')
-
+print'THE GAME IS OVER '
 
